@@ -1,36 +1,37 @@
 {
   "R": {
-    "Version": "3.6.2",
+    "Version": "4.0.3",
     "Repositories": [
       {
         "Name": "BioCsoft",
-        "URL": "https://bioconductor.org/packages/3.10/bioc"
+        "URL": "https://bioconductor.org/packages/3.12/bioc"
       },
       {
         "Name": "BioCann",
-        "URL": "https://bioconductor.org/packages/3.10/data/annotation"
+        "URL": "https://bioconductor.org/packages/3.12/data/annotation"
       },
       {
         "Name": "BioCexp",
-        "URL": "https://bioconductor.org/packages/3.10/data/experiment"
+        "URL": "https://bioconductor.org/packages/3.12/data/experiment"
       },
       {
         "Name": "BioCworkflows",
-        "URL": "https://bioconductor.org/packages/3.10/workflows"
+        "URL": "https://bioconductor.org/packages/3.12/workflows"
       },
       {
         "Name": "CRAN",
         "URL": "https://cloud.r-project.org"
       }
     ]
+
   },
   "Packages": {
-    "renv": {
-      "Package": "renv",
-      "Version": "0.12.3",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "b5510c50c7f31d453c385c7b460af2b9"
+    "colorout": {
+      "Package": "colorout",
+      "Version": "1.2-1",
+      "Source": "Local",
+      "OS_type": "unix",
+      "Hash": "7207750e679b8ace64a12ff0afd15b71"
     }
   }
 }

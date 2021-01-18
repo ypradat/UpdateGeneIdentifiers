@@ -1,0 +1,13 @@
+name: 3.8_geneids
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pandas
+  - ipython
+  - numpy
+  - pytest
+  - pytest-cov
+  - openpyxl
+  - jedi=0.17.2
+prefix: /usr/local/anaconda3/envs/3.8_geneids
