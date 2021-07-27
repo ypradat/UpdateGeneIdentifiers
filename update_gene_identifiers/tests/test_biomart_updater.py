@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 @author: Yoann Pradat
-@modified: Jan 05 2021
+@modified: Jul 27 2021
 @created: Jan 05 2021
 
 Test for updater module
@@ -41,23 +41,3 @@ def test_Updater(sample_maf):
                                          rules_discard_updates={"chromosome_name": "chromosome_name"},
                                          update_mode="add",
                                          suffix="Updated_Biomart")
-
-
-    updater = BiomartUpdater(verbose=False)
-    table_updated = updater.update_field(df=table,
-                                         df2bio={"Hugo_Symbol": "hgnc_symbol", "HGNC_ID": "hgnc_id", "Entrez_Gene_Id":
-                                                 "entrezgene_id", "Chromosome": "chromosome_name"},
-                                         field_to_update="hgnc_symbol",
-                                         fields_on_biomart=["hgnc_id", "entrezgene_id"],
-                                         rules_discard_updates={"chromosome_name": "chromosome_name"},
-                                         update_mode="add",
-                                         suffix="Updated_Biomart")
-
-
-
-
-    # df_table_original["HGNC_ID"] = df_table_original["HGNC_ID"].apply(lambda x: x if np.isnan(x) else "HGNC:%d" % x)
-
-    # cols_unique = ["Gene", "Hugo_Symbol", "Chromosome"]
-    # df_table_original["Row"] = df_table_original[cols_unique].fillna("NaN").agg(lambda x:"/".join(x), axis=1)
-    # df_table_original = df_table_original.sort_values("Row").reset_index(drop=True)
