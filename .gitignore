@@ -22,8 +22,8 @@ __pycache__/
 
 # R
 *.Rproj.user
-renv_3.6.2/
-renv_3.6.2.lock
+renv/
+renv.lock
 
 # Config files
 .ycm_extra_conf.py

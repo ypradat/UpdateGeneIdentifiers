@@ -61,8 +61,3 @@ def test_Updater(sample_maf):
     # cols_unique = ["Gene", "Hugo_Symbol", "Chromosome"]
     # df_table_original["Row"] = df_table_original[cols_unique].fillna("NaN").agg(lambda x:"/".join(x), axis=1)
     # df_table_original = df_table_original.sort_values("Row").reset_index(drop=True)
-
-fields_df2biomart = {"Hugo_Symbol": "hgnc_symbol",
-                     "HGNC_ID": "hgnc_id",
-                     "Entrez_Gene_Id": "entrezgene_id",
-                     "Chromosome": "chromosome_name"}
