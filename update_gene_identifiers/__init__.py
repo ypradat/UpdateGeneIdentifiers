@@ -10,4 +10,5 @@ from .biomart_updater import BiomartUpdater
 __all__ = [
     'discard_rows_with_less_info',
     'TableMaker',
+    'BiomartUpdater'
 ]
